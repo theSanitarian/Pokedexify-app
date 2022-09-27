@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedexify</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Pokedexify</h1>
+        <div class="search">
+            <input type="text" class="pokemon-search" placeholder="type to search">
+        </div>
+        <div class="reset">
+            <button type="button" class="pokemon-reset">RESET</button>
+        </div>
+    
+        <div class="sorting-buttons">
+            <button class="btn sort-by-alpha">Alphabetical</button>
+            <button class="btn sort-by-number">Number</button>
+            <button class="btn sort-by-type">Type</button>
+        </div>
+    </div>
+
+    <div class="pokemon"><div class="lds-dual-ring"></div></div>
+
+    <script src="sorting.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

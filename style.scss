@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #b5c6cf;
+}
+
+.header{
+    background-color: 	#adb6c2;
+    padding: 20px, 0;
+    h1{
+        width: fit-content;
+        margin: auto;
+        padding: 20px;
+
+    }
+
+    button {
+        display: inline-block;
+        border: none;
+        border-radius: 40px;
+        padding: 15px;
+        margin: 0;
+        text-decoration: none;
+        background: #c7e0de;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+    }
+    
+    button:hover,
+    button:focus {
+        background: 	#b5c6cf;
+    }
+    
+    button:focus {
+        outline: 1px solid #fff;
+        outline-offset: -4px;
+    }
+    
+    button:active {
+        transform: scale(0.99);
+    }
+
+    .sorting-buttons, .reset{
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+    }
+
+}
+
+.pokemon{
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 250px;
+    height: 380px;
+    margin: 20px;
+    background-image: url('https://cutewallpaper.org/21/pokemon-card-backgrounds/Best-48-TCG-Background-on-HipWallpaper-TCG-Wallpaper-TCG-.png');
+    background-size: cover;
+    transition: transform .2s;
+    img{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .pokemon-description{
+        background-color: aliceblue;
+        width: fit-content;
+        margin: auto;
+    }
+    .description-1, .description-2{
+        display: inline-block;
+        padding: 5px;
+        margin: auto;
+    }
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-element{
+    padding: 10px;
+    display: block;
+}
+
+.search{
+    margin: auto;
+    width: fit-content;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

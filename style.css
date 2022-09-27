@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #b5c6cf;
+}
+
+.header {
+  background-color: #adb6c2;
+  padding: 20px, 0;
+}
+
+.header h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+}
+
+.header button {
+  display: inline-block;
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+  margin: 0;
+  text-decoration: none;
+  background: #c7e0de;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: background 250ms ease-in-out,  -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out,  -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease,  -webkit-transform 150ms ease;
+}
+
+.header button:hover,
+.header button:focus {
+  background: #b5c6cf;
+}
+
+.header button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.header button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.header .sorting-buttons, .header .reset {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
+
+.pokemon {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 250px;
+  height: 380px;
+  margin: 20px;
+  background-image: url("https://cutewallpaper.org/21/pokemon-card-backgrounds/Best-48-TCG-Background-on-HipWallpaper-TCG-Wallpaper-TCG-.png");
+  background-size: cover;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.card img {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.card .pokemon-description {
+  background-color: aliceblue;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.card .description-1, .card .description-2 {
+  display: inline-block;
+  padding: 5px;
+  margin: auto;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card-element {
+  padding: 10px;
+  display: block;
+}
+
+.search {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+          animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
